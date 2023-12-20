@@ -8,10 +8,13 @@ type Notice struct {
 }
 
 type AndroidNotice struct {
-	Alert     string                 `json:"alert"`
-	Title     string                 `json:"title,omitempty"`
-	BuilderId int                    `json:"builder_id,omitempty"`
-	Extras    map[string]interface{} `json:"extras,omitempty"`
+	Alert        string                 `json:"alert"`
+	Title        string                 `json:"title,omitempty"`
+	BuilderId    int                    `json:"builder_id,omitempty"`
+	Extras       map[string]interface{} `json:"extras,omitempty"`
+	BigPicPath   string                 `json:"big_pic_path"`   // 大图片通知栏样式
+	LargeIcon    string                 `json:"large_icon"`     // 通知栏大图标
+	SmallIconUri string                 `json:"small_icon_uri"` // 通知栏小图标
 }
 
 type IOSNotice struct {

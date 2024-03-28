@@ -15,6 +15,7 @@ type AndroidNotice struct {
 	BigPicPath   string                 `json:"big_pic_path"`   // 大图片通知栏样式
 	LargeIcon    string                 `json:"large_icon"`     // 通知栏大图标
 	SmallIconUri string                 `json:"small_icon_uri"` // 通知栏小图标
+	Intent       map[string]interface{} `json:"intent,omitempty"`
 }
 
 type IOSNotice struct {
